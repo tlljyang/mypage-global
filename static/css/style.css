@@ -1,7 +1,7 @@
 @font-face {
     font-family: "a";
     /*中文字体*/
-    src: url();
+    src: url(https://r2.tlljyang.pp.ua/chs.TTF);
     font-display: swap;
 }
 
@@ -9,14 +9,14 @@
 @font-face {
     font-family: "b";
 
-    src: url(../fonts/Ubuntu-Regular.ttf);
+    src: url(https://r2.tlljyang.pp.ua/eng.otf);
     font-display: swap;
 }
 
 @font-face {
     font-family: "title";
     /*英文字体*/
-    src: url(../fonts/Pacifico-Regular.ttf);
+    src: url(https://r2.tlljyang.pp.ua/eng2.ttf);
     font-display: swap;
 }
 
