@@ -11,7 +11,16 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<link rel="stylesheet" href="https://pub-0e336ca3a2ef4d97b171dea00d987193.r2.dev/style.css">
 	<link rel="stylesheet" href="https://r2.tlljyang.pp.ua/root.css">
-
+		<script>
+        function fetchHitokoto() {
+            fetch('https://v1.hitokoto.cn')
+                .then(response => response.json())
+                .then(data => {
+                    document.querySelector('.gradientText').innerText =`每日一言：${data.hitokoto}`;
+                })
+                .catch(console.error);
+        }
+    </script>
 </head>
 
 <body>
@@ -87,9 +96,9 @@
 						src="https://r2.tlljyang.pp.ua/tlljyang/2025/08/40572ef9525a2ac57e1b999197d74458.png">
 				</div>
 				<div class="welcome" style="color: rgb(0, 255, 255);">怡阁晓望栈<div style="color: yellow;font-size: 30px;">by tlljyang (o゜▽゜)o☆</div></div>
-				<span class="gradientText" style="font-size: 28px;">本月拾穗：星稀河影转，霜重月华孤。</span>
-				<div class="description">🌎 <span class="purpleText">Author Debugging...</span></div>
-				<div class="description">📝 国际版：无日夜切换等需要本地源的功能。</div>
+				<span class="gradientText" style="font-size: 26px;"></span>
+				<div class="description">🌎 <span class="purpleText">Version: 3.0-Stable-Global</span></div>
+				<div class="description">📝 删除日夜切换，托管资源至R2，新增功能模块。</div>
 
 				<div class="iconContainer">
 					<a class="iconItem" onclick="" href="https://github.com/tlljyang">
@@ -259,6 +268,7 @@
 
 	</div>
 </body>
+<script>window.onload = fetchHitokoto;</script>
 <script src="https://r2.tlljyang.pp.ua/script.js"> </script>
 <script charset="UTF-8" id="LA_COLLECT" src="https://r2.tlljyang.pp.ua/js-sdk-pro.min.js"></script>
 <script>LA.init({ id: "KFqltKSkJgQTGD9l", ck: "KFqltKSkJgQTGD9l" })</script>
