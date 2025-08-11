@@ -91,71 +91,7 @@ function getCookie(name) {
 
 
 document.addEventListener('DOMContentLoaded', function () {
-
-
-
-
-
-
     var html = document.querySelector('html');
-    var themeState = getCookie("themeState") || "Light";
-    var tanChiShe = document.getElementById("tanChiShe");
-
-
-
-
-
-
-    function changeTheme(theme) {
-        tanChiShe.src = "https://r2.tlljyang.pp.ua/snake-Light.svg";
-        html.dataset.theme = theme;
-        setCookie("themeState", theme, 365);
-        themeState = theme;
-    }
-
-
-
-
-
-
-
-    var Checkbox = document.getElementById('myonoffswitch')
-    Checkbox.addEventListener('change', function () {
-        if (themeState == "Dark") {
-            changeTheme("Light");
-        } else if (themeState == "Light") {
-            changeTheme("Dark");
-        } else {
-            changeTheme("Dark");
-        }
-    });
-
-
-
-    if (themeState == "Dark") {
-        Checkbox.checked = false;
-    }
-
-    changeTheme(themeState);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   
-
     var fpsElement = document.createElement('div');
     fpsElement.id = 'fps';
     fpsElement.style.zIndex = '10000';
