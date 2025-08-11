@@ -8,7 +8,7 @@
 	<title>
 		ヾ(≧▽≦*)o怡阁晓望栈 </title>
 	<link rel="icon" href="https://r2.tlljyang.pp.ua/favicon.ico">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
 	<link rel="stylesheet" href="https://pub-0e336ca3a2ef4d97b171dea00d987193.r2.dev/style.css">
 	<link rel="stylesheet" href="https://r2.tlljyang.pp.ua/root.css">
 		<script>
@@ -22,7 +22,37 @@
         }
     </script>
 	<style>
-		.welcome {font-weight: 400;}
+	@media (max-width: 768px) {
+  		.zyyo-main {
+  		  flex-direction: column;
+  		}
+	
+  		.zyyo-left, .zyyo-right {
+  		  width: 100% !important;
+  		}
+	
+  		.logo, .index-logo {
+  		  max-width: 200px;
+  		  margin: 0 auto;
+  		}
+	
+  		/* 触摸元素优化 */
+  		.iconItem {
+  		  min-width: 60px;
+  		  padding: 12px;
+  		}
+	
+  		/* 文字可读性优化 */
+  		.welcome {
+  		  font-size: 1.5rem;
+  		}
+	}
+	.welcome {font-weight: 400;}
+	.logo, .index-logo {
+  	position: relative;
+  	overflow: visible;
+  	z-index: 10;
+	}
 	</style>
 </head>
 
